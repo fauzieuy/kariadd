@@ -27,7 +27,11 @@ Rails.application.routes.draw do
           post 'send_text', action: :send_text
         end
       end
-
     end
+
+
   end
+
+
+  root :to => "api/homes#index"
 end
