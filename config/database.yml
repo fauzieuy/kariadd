@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: kariadd_development
+  username: username
+  password: 123456
+
+test:
+  <<: *default
+  database: kariadd_test
+  username: username
+  password: 123456
+
+production:
+  <<: *default
+  database: kariadd_production
+  username: kariadd
+  password: <%= ENV['KARIADD_DATABASE_PASSWORD'] %>

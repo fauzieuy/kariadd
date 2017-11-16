@@ -1,0 +1,42 @@
+en:
+  activerecord:
+    errors:
+      models:
+        user:
+          blank: "Email can't be blank."
+          taken: "Email already been taken."
+          invalid: "Email is invalid format."
+  errors:
+    format: "%{message}"
+    email:
+      blank: "Email can't be blank."
+      not_found: 'User %{email} not found.'
+      invalid: 'Email is invalid format.'
+    friendship:
+      blank: "Friends can't be blank."
+      invalid: 'Friends is invalid format.'
+      already_connected: 'They are already connected.'
+      already_blocked: 'That user is blocked by you.'
+      you_are_blocked: 'You are already blocked by that user.'
+      not_connected: 'They are not connected.'
+    subscribe:
+      invalid: 'Invalid format in parameter'
+      not_found: 'They are not subscribed'
+      already_subscribed: 'You are already subscribed that user.'
+      already_blocked: 'That user is blocked by you.'
+      you_are_blocked: 'You are already blocked by that user.'
+    user:
+      invalid: 'Parameter is invalid parameter.'
+    requestor:
+      invalid: 'Email requestor is invalid format.'
+    target:
+      invalid: 'Email target is invalid format.'
+    sender:
+      invalid: 'Email sender is invalid format.'
+    text:
+      invalid: 'Text is invalid format.'
+    send_text:
+      invalid: 'Parameter is invalid format.'
+    user_block:
+      invalid: 'Parameter is invalid parameter.'
+      already_blocked: 'You are already blocked that user.'
